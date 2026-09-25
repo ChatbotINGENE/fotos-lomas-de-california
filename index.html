@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lomas de California · Fotos del proyecto</title>
+<meta name="description" content="Fotos reales de la lotificación Lomas de California, en Sensuntepeque, Cabañas.">
+<meta property="og:title" content="Lomas de California · Fotos del proyecto">
+<meta property="og:description" content="Lotificación en Sensuntepeque, Cabañas. Fotos reales del terreno.">
+<meta property="og:image" content="img/01.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--verde:#85B941;--vosc:#1F4D2B;--crema:#F4EEE2;--tinta:#23302A;--gris:#5F6B64}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:"Nunito Sans",-apple-system,system-ui,sans-serif;color:var(--tinta);background:#fff}
+header{background:var(--vosc);color:#fff;padding:22px 16px 26px;text-align:center}
+header img{width:190px;max-width:60%;filter:brightness(0) invert(1)}
+header h1{font-size:1.32rem;font-weight:800;margin-top:14px;line-height:1.2}
+header p{font-size:.92rem;color:#CFE0C4;margin-top:6px}
+.galeria{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:6px;padding:6px}
+.foto{border:0;padding:0;background:var(--crema);cursor:pointer;aspect-ratio:1;overflow:hidden;display:block}
+.foto img{width:100%;height:100%;object-fit:cover;display:block}
+footer{background:var(--crema);padding:26px 18px 34px;text-align:center}
+footer h2{color:var(--vosc);font-size:1.1rem}
+footer p{font-size:.92rem;color:var(--gris);margin-top:6px}
+.wa{display:inline-block;margin-top:14px;background:var(--verde);color:#fff;text-decoration:none;font-weight:800;padding:13px 26px;border-radius:999px;font-size:1rem}
+.web{display:block;margin-top:12px;color:var(--vosc);font-weight:600;text-decoration:none;font-size:.92rem}
+.chico{font-size:.74rem;color:var(--gris);margin-top:18px}
+#visor{position:fixed;inset:0;background:rgba(15,25,18,.96);display:none;align-items:center;justify-content:center;z-index:9}
+#visor.abierto{display:flex}
+#visor img{max-width:96vw;max-height:84vh;object-fit:contain}
+#visor .cerrar{position:absolute;top:10px;right:14px;color:#fff;background:none;border:0;font-size:2.1rem;line-height:1;cursor:pointer}
+#visor .nav{position:absolute;top:50%;transform:translateY(-50%);background:rgba(255,255,255,.14);color:#fff;border:0;font-size:1.7rem;padding:14px 16px;cursor:pointer;border-radius:8px}
+#visor .ant{left:8px} #visor .sig{right:8px}
+#visor .cuenta{position:absolute;bottom:16px;color:#CFE0C4;font-size:.85rem;width:100%;text-align:center}
+@media(min-width:700px){header h1{font-size:1.7rem} .galeria{grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:8px;padding:8px;max-width:1200px;margin:0 auto}}
+</style>
+</head>
+<body>
+<header>
+  <img src="img/logo.png" alt="Lomas de California">
+  <h1>Fotos del proyecto</h1>
+  <p>Lotificación en Sensuntepeque, Cabañas</p>
+</header>
+
+<main class="galeria">
+      <button class="foto" data-i="0" aria-label="Ver foto 1"><img src="img/01t.jpg" alt="Lomas de California, foto 1" loading="lazy" width="1500" height="844"></button>
+      <button class="foto" data-i="1" aria-label="Ver foto 2"><img src="img/02t.jpg" alt="Lomas de California, foto 2" loading="lazy" width="1500" height="844"></button>
+      <button class="foto" data-i="2" aria-label="Ver foto 3"><img src="img/03t.jpg" alt="Lomas de California, foto 3" loading="lazy" width="1500" height="844"></button>
+      <button class="foto" data-i="3" aria-label="Ver foto 4"><img src="img/04t.jpg" alt="Lomas de California, foto 4" loading="lazy" width="1500" height="844"></button>
+      <button class="foto" data-i="4" aria-label="Ver foto 5"><img src="img/05t.jpg" alt="Lomas de California, foto 5" loading="lazy" width="1500" height="844"></button>
+      <button class="foto" data-i="5" aria-label="Ver foto 6"><img src="img/06t.jpg" alt="Lomas de California, foto 6" loading="lazy" width="1500" height="844"></button>
+      <button class="foto" data-i="6" aria-label="Ver foto 7"><img src="img/07t.jpg" alt="Lomas de California, foto 7" loading="lazy" width="1500" height="844"></button>
+      <button class="foto" data-i="7" aria-label="Ver foto 8"><img src="img/08t.jpg" alt="Lomas de California, foto 8" loading="lazy" width="1500" height="844"></button>
+      <button class="foto" data-i="8" aria-label="Ver foto 9"><img src="img/09t.jpg" alt="Lomas de California, foto 9" loading="lazy" width="1500" height="844"></button>
+      <button class="foto" data-i="9" aria-label="Ver foto 10"><img src="img/10t.jpg" alt="Lomas de California, foto 10" loading="lazy" width="1500" height="844"></button>
+      <button class="foto" data-i="10" aria-label="Ver foto 11"><img src="img/11t.jpg" alt="Lomas de California, foto 11" loading="lazy" width="1500" height="844"></button>
+      <button class="foto" data-i="11" aria-label="Ver foto 12"><img src="img/12t.jpg" alt="Lomas de California, foto 12" loading="lazy" width="1500" height="844"></button>
+      <button class="foto" data-i="12" aria-label="Ver foto 13"><img src="img/13t.jpg" alt="Lomas de California, foto 13" loading="lazy" width="1125" height="1500"></button>
+      <button class="foto" data-i="13" aria-label="Ver foto 14"><img src="img/14t.jpg" alt="Lomas de California, foto 14" loading="lazy" width="1125" height="1500"></button>
+      <button class="foto" data-i="14" aria-label="Ver foto 15"><img src="img/15t.jpg" alt="Lomas de California, foto 15" loading="lazy" width="1500" height="1125"></button>
+      <button class="foto" data-i="15" aria-label="Ver foto 16"><img src="img/16t.jpg" alt="Lomas de California, foto 16" loading="lazy" width="1500" height="1125"></button>
+      <button class="foto" data-i="16" aria-label="Ver foto 17"><img src="img/17t.jpg" alt="Lomas de California, foto 17" loading="lazy" width="1500" height="1125"></button>
+      <button class="foto" data-i="17" aria-label="Ver foto 18"><img src="img/18t.jpg" alt="Lomas de California, foto 18" loading="lazy" width="1125" height="1500"></button>
+      <button class="foto" data-i="18" aria-label="Ver foto 19"><img src="img/19t.jpg" alt="Lomas de California, foto 19" loading="lazy" width="1125" height="1500"></button>
+      <button class="foto" data-i="19" aria-label="Ver foto 20"><img src="img/20t.jpg" alt="Lomas de California, foto 20" loading="lazy" width="1500" height="1125"></button>
+      <button class="foto" data-i="20" aria-label="Ver foto 21"><img src="img/21t.jpg" alt="Lomas de California, foto 21" loading="lazy" width="1500" height="1125"></button>
+      <button class="foto" data-i="21" aria-label="Ver foto 22"><img src="img/22t.jpg" alt="Lomas de California, foto 22" loading="lazy" width="1500" height="1125"></button>
+      <button class="foto" data-i="22" aria-label="Ver foto 23"><img src="img/23t.jpg" alt="Lomas de California, foto 23" loading="lazy" width="1500" height="1125"></button>
+      <button class="foto" data-i="23" aria-label="Ver foto 24"><img src="img/24t.jpg" alt="Lomas de California, foto 24" loading="lazy" width="1500" height="1125"></button>
+      <button class="foto" data-i="24" aria-label="Ver foto 25"><img src="img/25t.jpg" alt="Lomas de California, foto 25" loading="lazy" width="1500" height="1125"></button>
+      <button class="foto" data-i="25" aria-label="Ver foto 26"><img src="img/26t.jpg" alt="Lomas de California, foto 26" loading="lazy" width="1500" height="1125"></button>
+      <button class="foto" data-i="26" aria-label="Ver foto 27"><img src="img/27t.jpg" alt="Lomas de California, foto 27" loading="lazy" width="1125" height="1500"></button>
+      <button class="foto" data-i="27" aria-label="Ver foto 28"><img src="img/28t.jpg" alt="Lomas de California, foto 28" loading="lazy" width="1125" height="1500"></button>
+      <button class="foto" data-i="28" aria-label="Ver foto 29"><img src="img/29t.jpg" alt="Lomas de California, foto 29" loading="lazy" width="1125" height="1500"></button>
+      <button class="foto" data-i="29" aria-label="Ver foto 30"><img src="img/30t.jpg" alt="Lomas de California, foto 30" loading="lazy" width="1125" height="1500"></button>
+      <button class="foto" data-i="30" aria-label="Ver foto 31"><img src="img/31t.jpg" alt="Lomas de California, foto 31" loading="lazy" width="1125" height="1500"></button>
+      <button class="foto" data-i="31" aria-label="Ver foto 32"><img src="img/32t.jpg" alt="Lomas de California, foto 32" loading="lazy" width="1125" height="1500"></button>
+      <button class="foto" data-i="32" aria-label="Ver foto 33"><img src="img/33t.jpg" alt="Lomas de California, foto 33" loading="lazy" width="1125" height="1500"></button>
+      <button class="foto" data-i="33" aria-label="Ver foto 34"><img src="img/34t.jpg" alt="Lomas de California, foto 34" loading="lazy" width="1125" height="1500"></button>
+      <button class="foto" data-i="34" aria-label="Ver foto 35"><img src="img/35t.jpg" alt="Lomas de California, foto 35" loading="lazy" width="1125" height="1500"></button>
+      <button class="foto" data-i="35" aria-label="Ver foto 36"><img src="img/36t.jpg" alt="Lomas de California, foto 36" loading="lazy" width="1125" height="1500"></button>
+      <button class="foto" data-i="36" aria-label="Ver foto 37"><img src="img/37t.jpg" alt="Lomas de California, foto 37" loading="lazy" width="1125" height="1500"></button>
+      <button class="foto" data-i="37" aria-label="Ver foto 38"><img src="img/38t.jpg" alt="Lomas de California, foto 38" loading="lazy" width="1125" height="1500"></button>
+</main>
+
+<footer>
+  <h2>¿Le gustaría conocerlo?</h2>
+  <p>Con gusto lo atendemos en el terreno o se lo mostramos en videollamada, esté donde esté.</p>
+  <a class="wa" href="https://wa.me/50377571849?text=Hola%2C%20vi%20las%20fotos%20del%20proyecto%20y%20quiero%20informaci%C3%B3n%20de%20los%20lotes.">Escríbanos por WhatsApp</a>
+  <a class="web" href="https://lomasdecalifornia.com">lomasdecalifornia.com</a>
+  <p class="chico">Fotos reales del proyecto. Comercializado por INGENE, S.A. de C.V.</p>
+</footer>
+
+<div id="visor" role="dialog" aria-modal="true">
+  <button class="cerrar" aria-label="Cerrar">&times;</button>
+  <button class="nav ant" aria-label="Anterior">&#8249;</button>
+  <img id="grande" src="" alt="">
+  <button class="nav sig" aria-label="Siguiente">&#8250;</button>
+  <div class="cuenta"></div>
+</div>
+
+<script>
+const FOTOS = [{"n": "01"}, {"n": "02"}, {"n": "03"}, {"n": "04"}, {"n": "05"}, {"n": "06"}, {"n": "07"}, {"n": "08"}, {"n": "09"}, {"n": "10"}, {"n": "11"}, {"n": "12"}, {"n": "13"}, {"n": "14"}, {"n": "15"}, {"n": "16"}, {"n": "17"}, {"n": "18"}, {"n": "19"}, {"n": "20"}, {"n": "21"}, {"n": "22"}, {"n": "23"}, {"n": "24"}, {"n": "25"}, {"n": "26"}, {"n": "27"}, {"n": "28"}, {"n": "29"}, {"n": "30"}, {"n": "31"}, {"n": "32"}, {"n": "33"}, {"n": "34"}, {"n": "35"}, {"n": "36"}, {"n": "37"}, {"n": "38"}];
+const visor = document.getElementById('visor'), grande = document.getElementById('grande'),
+      cuenta = visor.querySelector('.cuenta');
+let i = 0;
+function ver(n){
+  i = (n + FOTOS.length) % FOTOS.length;
+  grande.src = 'img/' + FOTOS[i].n + '.jpg';
+  cuenta.textContent = (i + 1) + ' de ' + FOTOS.length;
+  visor.classList.add('abierto');
+  document.body.style.overflow = 'hidden';
+}
+function cerrar(){ visor.classList.remove('abierto'); document.body.style.overflow = ''; }
+document.querySelectorAll('.foto').forEach(b => b.onclick = () => ver(+b.dataset.i));
+visor.querySelector('.cerrar').onclick = cerrar;
+visor.querySelector('.ant').onclick = e => { e.stopPropagation(); ver(i - 1); };
+visor.querySelector('.sig').onclick = e => { e.stopPropagation(); ver(i + 1); };
+visor.onclick = e => { if (e.target === visor || e.target === grande) cerrar(); };
+document.onkeydown = e => {
+  if (!visor.classList.contains('abierto')) return;
+  if (e.key === 'Escape') cerrar();
+  if (e.key === 'ArrowRight') ver(i + 1);
+  if (e.key === 'ArrowLeft') ver(i - 1);
+};
+let x0 = null;
+visor.addEventListener('touchstart', e => x0 = e.changedTouches[0].clientX, {passive:true});
+visor.addEventListener('touchend', e => {
+  if (x0 === null) return;
+  const d = e.changedTouches[0].clientX - x0;
+  if (Math.abs(d) > 45) ver(i + (d < 0 ? 1 : -1));
+  x0 = null;
+}, {passive:true});
+</script>
+</body>
+</html>
